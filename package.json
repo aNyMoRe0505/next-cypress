@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "next": "10.0.6",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^6.3.0",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
