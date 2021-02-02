@@ -17,11 +17,14 @@
   "extends": [
     "eslint:recommended",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "plugin:cypress/recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "react/react-in-jsx-scope": [0],
     "react/jsx-props-no-spreading": [0],
-    "react/jsx-filename-extension": [0]
+    "react/jsx-filename-extension": [0],
+    "prettier/prettier": ["error", { "singleQuote": true }]
   }
 }
