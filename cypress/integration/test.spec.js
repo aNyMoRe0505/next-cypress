@@ -5,6 +5,7 @@ describe('test', () => {
   });
 
   it('test1', () => {
+    cy.get('#inputId').should('be.visible');
     cy.contains('test').should('not.exist');
     cy.get('#inputId').focus();
     cy.get('#inputId').blur();
