@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
+import App from 'next/app';
+import { appWithTranslation } from '../services/I18Next';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 
-export default MyApp;
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext)),
+});
+
+export default appWithTranslation(MyApp);
